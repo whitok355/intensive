@@ -1,10 +1,11 @@
 "use strict";
 
 const search = () =>{
-    const search = document.querySelector(`.form-control`);
+    const search = document.querySelector(`.search-block > input`);
+    const btn = document.querySelector(`.search-block > button`)
 
-    search.addEventListener('input', () => {
-        console.log("ввод")
+    btn.addEventListener('click', (e) => {
+        console.log(search.value)
     })
 }
 
